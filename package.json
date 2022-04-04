@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
+    "msnodesqlv8": "^2.4.7",
     "mssql": "^8.0.2"
   },
   "devDependencies": {

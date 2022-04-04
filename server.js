@@ -1,17 +1,18 @@
 var express = require('express');
+var sql = require("mssql/msnodesqlv8");
 var app = express();
 
 app.get('/', function (req, res) {
    
-    var sql = require("mssql");
-
+    
     // config for your database
     var config = {
-        user: 'nsiddiqui@mms.org',
-        password: 'TXMMS@1623',
+        port: 1433,
         server: 'sqldev1.dom1.mms.org', 
         database: 'BulkReprintRewrite',
+        driver: 'msnodesqlv8',
         options: {
+            trustedConnection: true,
             trustServerCertificate: true
         }
     };
